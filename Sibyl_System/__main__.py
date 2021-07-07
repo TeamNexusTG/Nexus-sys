@@ -41,7 +41,7 @@ for load in to_load:
         print("------------------------------------")
 
 
-@System.on(system_cmd(pattern=r"sysinfo", allow_enforcer=True))
+@System.on(system_cmd(pattern=r"exinfo", allow_enforcer=True))
 async def status(event):
     msg = await event.reply("Conecting to EDITH - X Core.")
     time.sleep(1)
