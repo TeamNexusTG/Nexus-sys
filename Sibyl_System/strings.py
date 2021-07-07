@@ -1,8 +1,8 @@
 on_string = """
-  *I'm Edith, How Are You! Sir* 
-*Welcome* ⭐⭐⭐
-*RANK* : {Enforcer}
-*NAME* : {name}
+  <\b>I'm Edith, How Are You! Sir<b>
+<\b>Welcome<b> ⭐⭐⭐
+<\b>RANK<b> : {Enforcer}
+<b\>NAME<b> : {name}
 You are an authorized user!
 """
 
