@@ -1,9 +1,9 @@
 on_string = """
-  <\b>I'm Edith, How Are You! Sir<b>
-<\b>Welcome<b> ⭐⭐⭐
-<\b>RANK<b> : {Enforcer}
-<b\>NAME<b> : {name}
-You are an authorized user!
+  I'm Edith, How Are You! Sir
+<b>Welcome<\b> ⭐⭐⭐
+<b>Name<\b> - {name}
+<b>Rank<\b> - {Enforcer}
+You are an authorized user
 """
 
 # Make sure not to change these too much
