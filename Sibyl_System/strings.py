@@ -1,7 +1,9 @@
 on_string = """
-   𝑊𝐸𝐿𝐶𝑂𝑀𝐸
-𝐍𝐀𝐌𝐄:{name}
-𝐑𝐀𝐍𝐊:{Enforcer}
+  *I'm Edith, How Are You! Sir* 
+*Welcome* ⭐⭐⭐
+*RANK* : {Enforcer}
+*NAME* : {name}
+You are an authorized user!
 """
 
 # Make sure not to change these too much
