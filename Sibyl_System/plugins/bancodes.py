@@ -3,8 +3,8 @@ import os
 
 
 
-@System.on(system_cmd(pattern=r"bancodes"))
-async def bancodes(event):
+@System.on(system_cmd(pattern="?bancodes"))
+async def bancodes:
     try:
         user_id = event.text.split(" ", 1)[1]
     except IndexError:
