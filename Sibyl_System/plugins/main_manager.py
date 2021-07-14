@@ -317,7 +317,7 @@ async def reject(event):
 
 @System.on(system_cmd(pattern=r"bancodes", allow_enforcer=True, allow_inspector=True))
 async def bancodes(event):
-        await System.send_message("HERE ARE THE BAN CODES FOR EDITH -X :
+        await event.reply("HERE ARE THE BAN CODES FOR EDITH -X :
 • `ED-X_01` - RAID PARTICIPANT
 • `ED-X_02` - RAID/SPAM INFLAMMER
 • `ED-X_03` - SCAMMER
