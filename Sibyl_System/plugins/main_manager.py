@@ -319,9 +319,7 @@ async def reject(event):
 async def bancodes(event):
       msg = await event.reply("Getting Codes...")
       time.sleep(2)
-      await msg.edit("HERE ARE THE BAN CODES FOR EDITH -X :
-
-• `ED-X_01` - RAID PARTICIPANT
+      await msg.edit("• `ED-X_01` - RAID PARTICIPANT
 • `ED-X_02` - RAID/SPAM INFLAMMER
 • `ED-X_03` - SCAMMER
 • `ED-X_04` - SPAM ADDING MEMBER
@@ -338,10 +336,7 @@ async def bancodes(event):
 • `ED-X_15` - BAN EVASION 
 • `ED-X_16` - SPAMBOT
 • `ED-X_17` - RAID INITIALIZOR
-• `ED-X_18` - CRIMINAL ACT
-
-
-THIS SCANNER BANS ONLY APPLY TO YOUR GROUP IF U ARE USING ANY ONE OF THE BOTS IN [THIS LIST](https://t.me/EdithXinfo/12)")
+• `ED-X_18` - CRIMINAL ACT)")
       return
 
 help_plus = """
