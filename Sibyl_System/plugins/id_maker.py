@@ -1,46 +1,36 @@
 from Sibyl_System import system_cmd, System
-from PIL import Image, ImageDraw, ImageFont
 import os
 
 
-@System.on(system_cmd(pattern=r"get_id"))
-async def image_maker(event) -> None:
-    replied_user = await event.get_reply_message()
-    # Download profile photo
-    await System.download_profile_photo(
-        replied_user.from_id.user_id, file="user.png", download_big=True
-    )
-    user_photo = Image.open("user.png")
-    # open id photo
-    id_template = Image.open("ID.png")
-    # resize user photo to fit box in id template
-    user_photo = user_photo.resize((1159, 1241))
-    # put image in position
-    id_template.paste(user_photo, (1003, 641))
-    # postion on where to draw text
-    draw = ImageDraw.Draw(id_template)
-    color = "rgb(0, 0, 0)"  # black
-    font = ImageFont.truetype("font.ttf", size=80)
-    font2 = ImageFont.truetype("font2.ttf", size=100)
-    # put text in image
-    draw.text(
-        (1000, 460),
-        replied_user.sender.first_name.replace("\u2060", ""),
-        fill=color,
-        font=font2,
-    )
-    draw.text((393, 50), str(replied_user.from_id.user_id), fill=color, font=font)
-    id_template.save("user_id.png")
-    if "doc" in event.text:
-        force_document = True
-    else:
-        force_document = False
-    await System.send_message(
-        event.chat_id,
-        "Generated User ID",
-        reply_to=event.message.id,
-        file="user_id.png",
-        force_document=force_document,
-        silent=True,
-    )
-    os.remove("user_id.png")
+
+@System.on(system_cmd(pattern="bancodes"))
+async def bancodes(event):
+    try:
+        user_id = event.text.split(" ", 1)[1]
+    except IndexError:
+        return
+        await event.reply("
+HERE ARE THE BAN CODES FOR EDITH -X :
+
+• `ED-X_01` - RAID PARTICIPANT
+• `ED-X_02` - RAID/SPAM INFLAMMER
+• `ED-X_03` - SCAMMER
+• `ED-X_04` - SPAM ADDING MEMBER
+• `ED-X_05` - ABUSE SPAM 
+• `ED-X_06` - NSFW SPAMMER
+• `ED-X_07` - IMPERSONATION
+• `ED-X_08` - MD/BTC SCAM
+• `ED-X_09` - ADDING SPAMBOTS
+• `ED-X_10` - ILLEGAL
+• `ED-X_11` - PHISHING
+• `ED-X_12` - FRAUD PROMOTION  (ANY KIND)
+• `ED-X_13` - CYBER THREATENING/CYBER BULLY 
+• `ED-X_14` - CHILD ABUSE 
+• `ED-X_15` - BAN EVASION 
+• `ED-X_16` - SPAMBOT
+• `ED-X_17` - RAID INITIALIZOR
+• `ED-X_18` - CRIMINAL ACT
+
+
+THIS SCANNER BANS ONLY APPLY TO YOUR GROUP IF U ARE USING ANY ONE OF THE BOTS IN [THIS LIST](https://t.me/EdithXinfo/12)")
+        return
