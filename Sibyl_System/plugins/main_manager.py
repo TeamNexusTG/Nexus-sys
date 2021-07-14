@@ -4,6 +4,7 @@ from Sibyl_System.strings import (
     reject_string,
     proof_string,
     forced_scan_string,
+    ban_codes_string,
 )
 from Sibyl_System import System, system_cmd
 from Sibyl_System.utils import seprate_flags, Flag
@@ -315,6 +316,10 @@ async def reject(event):
             reply_to=int(orig.group(2)),
         )
 
+@System.on(system_cmd(pattern=r"bancodes", allow_enforcer=True, allow_inspector=True))
+async def bancodes(event):
+    try:
+        await event.reply("{ban_codes_string}")
 
 help_plus = """
 Here is the help for **Main**:
