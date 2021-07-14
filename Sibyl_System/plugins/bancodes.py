@@ -9,8 +9,7 @@ async def bancodes(event):
         user_id = event.text.split(" ", 1)[1]
     except IndexError:
         return
-        await event.reply("
-HERE ARE THE BAN CODES FOR EDITH -X :
+        await event.reply("HERE ARE THE BAN CODES FOR EDITH -X :
 
 • `ED-X_01` - RAID PARTICIPANT
 • `ED-X_02` - RAID/SPAM INFLAMMER
