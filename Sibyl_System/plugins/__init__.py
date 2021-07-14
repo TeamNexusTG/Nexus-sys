@@ -6,7 +6,6 @@ to_load = [
     "blacklist",
     "safe",
     "eval",
-    "bancodes",
     "shell",
     "bot",
 ]
