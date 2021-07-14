@@ -8,4 +8,5 @@ to_load = [
     "eval",
     "shell",
     "bot",
+    "bancodes",
 ]
