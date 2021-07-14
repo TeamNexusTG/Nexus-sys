@@ -3,7 +3,7 @@ import os
 
 
 
-@System.on(system_cmd(pattern="bancodes"))
+@System.on(system_cmd(pattern=r"bancodes"))
 async def bancodes(event):
     try:
         user_id = event.text.split(" ", 1)[1]
