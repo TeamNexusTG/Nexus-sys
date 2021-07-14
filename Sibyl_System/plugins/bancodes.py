@@ -20,3 +20,6 @@ HERE ARE THE BAN CODES FOR [EDITH -X](https://t.me/EdithXscanner):
 • `ED-X_18` - **CRIMINAL ACT**
 THIS SCANNER BANS ONLY APPLY TO YOUR GROUP IF U ARE USING ANY ONE OF THE BOTS IN [THIS LIST](https://t.me/EdithXinfo/12)
 """
+
+
+__plugin_name__ = "Bancodes"
