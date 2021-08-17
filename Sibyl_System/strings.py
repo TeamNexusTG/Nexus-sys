@@ -56,11 +56,11 @@ bot_gban_string = """
 **Reason:** `{reason}`
 """
 
-#group_scan_string = """
-#GroupElimination
+group_scan_string = """
+#TestGroupElimination
 **Target Group:** {chat}
 **Reason:** {reason}
 **Executor:** `{executor}`
-**Case Number:** `{proof_id}`
+"""
 # https://psychopass.fandom.com/wiki/Crime_Coefficient_(Index)
 # https://psychopass.fandom.com/wiki/The_Dominator
