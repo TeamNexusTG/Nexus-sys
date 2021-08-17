@@ -1,5 +1,5 @@
 on_string = """
-  **I'm Edith, How Are You! Sir**
+  **I'm Edith, How Are You, Sir? **
 **Welcome** ⭐⭐⭐
 **Name** - `{name}`
 **Rank** - `{Enforcer}`
@@ -56,5 +56,11 @@ bot_gban_string = """
 **Reason:** `{reason}`
 """
 
+#group_scan_string = """
+#GroupElimination
+**Target Group:** {chat}
+**Reason:** {reason}
+**Executor:** `{executor}`
+**Case Number:** `{proof_id}`
 # https://psychopass.fandom.com/wiki/Crime_Coefficient_(Index)
 # https://psychopass.fandom.com/wiki/The_Dominator
