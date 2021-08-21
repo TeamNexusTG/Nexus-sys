@@ -61,6 +61,7 @@ group_scan_string = """
 **Target Group:** {chat}
 **Reason:** {reason}
 **Executor:** `{executor}`
+**Proof:** `{proof}`
 """
 # https://psychopass.fandom.com/wiki/Crime_Coefficient_(Index)
 # https://psychopass.fandom.com/wiki/The_Dominator
